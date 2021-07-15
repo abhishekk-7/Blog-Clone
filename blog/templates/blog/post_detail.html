@@ -14,10 +14,10 @@
 
     {%if user.is_authenticated%}
         <a class="btn btn-primary" href="{% url 'post_edit' pk=post.pk%}">
-            <span class="glyphicon glyphicon-remove"></span>
+            <span class="glyphicon glyphicon-remove">Edit</span>
         </a>
         <a class="btn btn-primary" href="{% url 'post_remove' pk=post.pk%}">
-            <span class="glyphicon glyphicon-remove"></span>
+            <span class="glyphicon glyphicon-remove">Remove</span>
         </a>
     {%endif%}
     <hr>
